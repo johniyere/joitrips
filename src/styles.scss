@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer utilities {
+  .btn-ultramarine-active,
+  .btn-mustard-active {
+    padding-bottom: 7px;
+    margin-top: 3px;
+    transform: translateY(3px);
+  }
+
+  .btn-ultramarine-active {
+    box-shadow: #7f9df9 0px -3px 0px inset, #e5ecff 0px 0px 0px 2px inset,
+      #e5ecff 0px -5px 0px 0px inset !important;
+  }
+
+  .btn-mustard-active {
+    box-shadow: #daa701 0px -3px 0px inset, #fff4d2 0px 0px 0px 2px inset,
+      #fff4d2 0px -5px 0px 0px inset !important;
+  }
+}

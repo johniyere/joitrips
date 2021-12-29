@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "joitrips": {
+      "hosting": {
+        "joitrips": [
+          "joitrips"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "joitrips"
+  }
+}

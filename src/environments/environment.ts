@@ -3,7 +3,21 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  useEmulators: false,
+  firebase: {
+    apiKey: 'AIzaSyAgZsVAvs1H8y6ps0G-_k8rRhqs3swINzs',
+    authDomain: 'joitrips.firebaseapp.com',
+    databaseURL: 'https://joitrips.firebaseio.com',
+    projectId: 'joitrips',
+    storageBucket: 'joitrips.appspot.com',
+    messagingSenderId: '487997936730',
+    appId: '1:487997936730:web:62ecc4a5b506d9a6bcb463',
+  },
+  mapbox: {
+    accessToken:
+      'pk.eyJ1Ijoiam9obml5ZXJlIiwiYSI6ImNreHJnZWoxYTBpcGUycm1wYXNrdTIza20ifQ.qZMbKvaWUs0xGEoL55WjbA',
+  },
 };
 
 /*
