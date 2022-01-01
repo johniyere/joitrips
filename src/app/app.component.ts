@@ -21,7 +21,6 @@ import { AuthService } from './core/auth.service';
         <a
           joi-button
           color="mustard"
-          (click)="openLoginScreen()"
           *ngIf="!(authService.user$ | async); else logOutTmpl"
           [routerLink]="['login']"
         >
@@ -46,7 +45,6 @@ import { AuthService } from './core/auth.service';
 })
 export class AppComponent implements OnInit {
   title = 'joitrips';
-  showLogin = false;
   showTopnav = true;
 
   constructor(private router: Router, public authService: AuthService) {}
@@ -64,15 +62,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  openLoginScreen() {
-    this.showLogin = true;
-  }
-
   async signOut() {
     await this.authService.signOut();
-  }
-
-  closeLoginScreen() {
-    this.showLogin = false;
   }
 }

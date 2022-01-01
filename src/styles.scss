@@ -5,7 +5,8 @@
 
 @layer utilities {
   .btn-ultramarine-active,
-  .btn-mustard-active {
+  .btn-mustard-active,
+  .btn-white-active {
     padding-bottom: 7px;
     margin-top: 3px;
     transform: translateY(3px);
@@ -20,4 +21,13 @@
     box-shadow: #daa701 0px -3px 0px inset, #fff4d2 0px 0px 0px 2px inset,
       #fff4d2 0px -5px 0px 0px inset !important;
   }
+
+  .btn-white-active {
+    box-shadow: #d2d2d2 0px -3px 0px inset, #eeeeee 0px 0px 0px 2px inset,
+      #eeeeee 0px -5px 0px 0px inset !important;
+  }
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
 }

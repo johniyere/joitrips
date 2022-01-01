@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         ultramarine: {
+          50: '#EBF0FF',
           100: '#D6E0FF',
           200: '#C7D5FF',
           300: '#7F9DF9',

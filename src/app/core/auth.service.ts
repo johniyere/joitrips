@@ -2,7 +2,6 @@ import { Injectable, Optional } from '@angular/core';
 import {
   Auth,
   authState,
-  signInAnonymously,
   signOut,
   User,
   GoogleAuthProvider,
